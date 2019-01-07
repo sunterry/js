@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 所有的对象都有toLocalString()， toString(), valueOf()
+    // 数组的转换方法
+    const arrString = ['red', 'blur', 'yellow'];
+
+    // toString() 方法
+    console.log(arrString.toString()); // red,blur, yellow
+
+    // valueOf() 方法
+    console.log(arrString.valueOf()); // ["red", "blur", "yellow"]
+
+    // toLocalString() 方法
+    console.log(arrString.toLocaleString()); // red,blur,yellow
+
+    // join() 方法
+    const arr = arrString.join(',');
+    console.log(arr);
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 1. 访问对象的属性使用点表示法
+    const person = {
+    	name: 'world',
+    	page: 29,
+    };
+
+    console.log(person.name);
+
+    // 2. 使用方括号来访问对象的属性
+    console.log(person["age"]);
+
+    // 从功能上看，这两种访问对象的属性没有什么区别，但方括号的优点是可以通过变量访问
+    const propertyName = 'name';
+    console.log(person[propertyName]);
+
+    // 除非必须使用变量名来访问对象的属性，我们建议使用点表示法
+</script>
+</body>
+</html>

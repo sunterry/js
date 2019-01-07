@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 取值时要使用方括号并提供数组相应值的基于0的索引
+    const arrString = ['red', 'blur', 'yello'];
+    console.log(arrString[1]) // 'blur'
+    arrString[3] = 'pink'; // ['red', 'blur', 'yello', 'pink']
+    arrString[arrString.length] = 'green'; // ['red', 'blur', 'yello', 'pink', 'green']
+
+    // 数组的length属性， 始终返回0 或者更大的值
+    const arr = [];
+    console.log(arr.length); // 0
+    console.log(arrString.length) // 5
+
+    // 设置length属性， 可以从数组的末尾移除项或向数组中添加新项
+    arrString.length = 3;
+    console.log(arrString[5]) // undefined 其实 4 ，5数组索引 都是undefined
+    arr.length = 2 // [undefined, undefined]
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Array 数据的有序列表
+    // 数组的每一项可以用来保存任何类型的数据
+    // 数组的大小是动态可调整的
+
+    // 1. 使用Array构造函数创建数组
+    const arr = new Array();
+
+    // 如果预先知道数组要保存的项目数量， 可以给构造函数传递该数量，该数组会自动变成length属性的值
+    const arrNull = new Array(20); // 创建 length 值为 20 的数组。
+    // 创建字符串数组
+    const arrString = new Array('red', 'blur', 'yello');
+    // 如果给构造函数传递的是一个数字，那么会生成数组的长度
+    // 如果给构造函数传递的其他类型的参数，那么会生成包含这些参数的数组
+    const colors = new Array(3);
+    const names = new Array('jack', 'terry');
+
+    // 2.使用数组字面量的方式创建数组
+    const options = ['red', 'yello'];
+    const arr2 = [];
+    const values = [1, 2]; // 不要这样！这样会创建一个包含 2 或 3 项的数组
+    const options = [, , , , ]; // 不要这样！这样会创建一个包含 5 或 6 项的数组
+
+</script>
+</body>
+</html>

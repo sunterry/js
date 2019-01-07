@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 检测数组的方法有两种 instanceof 和 Array.isArray()
+    const arrString = ['red', 'blur', 'yello'];
+    const obj = {};
+    // 1. instanceOf 检测是不是数组
+    console.log(arrString instanceof Array); // true
+    console.log(obj instanceof Array); // false
+
+    // instanceof的问题在于， 假设只有一个全局执行环境
+    // 如果网页中存在框架，那么就存在两个以上的不同全局执行环境
+    // 如果从一个框架向另一个框架传入数组，那么传入的数组和第二个框架中的原声创建的数组分别具有各自不同的构造函数
+    // Array.isArray() 方法不管你有几个全局执行环境都会检测到底是不是Array类型
+    console.log(Array.isArray(arrString));
+    console.log(Array.isArray(obj));
+</script>
+</body>
+</html>
